@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1>Register</h1>
+    <form>
+        <div>
+            <label for="firstName">First Name</label>
+            <input name='firstName' id='firstName' placeholder='First Name' required>
+
+            <label for="lastName">Last Name</label>
+            <input name='lastName' id='lastName' placeholder='Last Name' required>
+        </div>
+
+        <div>
+            <label for="genderMale">Male</label>
+            <input name="gender" id="genderMale" type="radio" value="m">
+
+            <label for="genderFemale">Female</label>
+            <input name="gender" id="genderFemale" type="radio" value="f">
+
+            <label for="genderOther">Other</label>
+            <input name="gender" id="genderOther" type="radio" value="o">
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="email" required>
+            <label for="password">Password:</label>
+            <input id="password" type="password" placeholder="password" pattern=".{8,12}" required title="8 to 12 characters">
+        </div>
+
+        <div>
+            Birthday
+            <select name="month">
+                <option value='Jan'>January</option>
+                <option value='Feb'>February</option>
+                <option value='Mar'>March</option>
+                <option value='Apr'>April</option>
+            </select>
+
+            <select name="day">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+            </select>
+
+            <select name="year">
+                <option value=2018>2018</option>
+                <option value=2017>2017</option>
+                <option value=2016>2016</option>
+            </select>
+
+        </div>
+
+        <div>
+            I agree to the T&A
+            <input name="TAndA" type="checkbox" value=True>
+        </div>
+
+        <input type="submit">
+
+    </form>
+
+</body>
+</html>
